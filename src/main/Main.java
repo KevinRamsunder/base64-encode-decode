@@ -9,7 +9,7 @@ public class Main {
 
    public static void main(String[] args) throws IOException {
       if (args.length == 0) {
-         System.out.println("No command line argument; <arg0> filename");
+         System.out.println("No command line argument; [arg0] filename");
          System.exit(0);
       }
 
