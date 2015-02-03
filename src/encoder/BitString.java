@@ -32,10 +32,10 @@ public class BitString {
    }
 
    private String createPadding(int paddingLength) {
-      String padding = "";
+      StringBuilder padding = new StringBuilder(paddingLength);
 
       for (int i = 0; i < paddingLength; i++) {
-         padding += ("0");
+         padding.append("0");
       }
 
       return padding.toString();
@@ -43,10 +43,10 @@ public class BitString {
 
    private String createBitPadding(int remainder) {
       String padding = "00000000";
-      String result = "";
+      StringBuilder result = new StringBuilder();
 
       for (int i = 0; i < remainder; i++) {
-         result += (padding);
+         result.append(padding);
       }
 
       return result.toString();
