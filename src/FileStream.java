@@ -31,7 +31,7 @@ public class FileStream {
       }
    }
    
-   /** Display error message and the quit program */
+   /** Display error message and then quit program */
    private static void error(Exception e) {
       System.out.println();
       System.out.println(e.getLocalizedMessage());
